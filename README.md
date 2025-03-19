@@ -20,7 +20,9 @@ Mini project untuk API testing menggunakan Postman dan Robot Framework.
    o Buka Postman 
    o Import koleksi API 
    o Jalankan request sesuai kebutuhan 
-   o Menjalankan dengan Newman (CLI): newman run Collection.json -r html (Laporan hasil testing akan tersimpan dalam format HTML)
+   o Menjalankan dengan Newman (CLI): 
+   newman run Collection.json -r html 
+   (Laporan hasil testing akan tersimpan dalam format HTML)
 3. Menjalankan dengan Robot Framework 
    robot api_test.robot 
    (Laporan hasil testing akan tersedia dalam report.html dan log.html.)

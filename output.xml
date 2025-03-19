@@ -1,106 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-03-19T13:49:58.530128" rpa="false" schemaversion="5">
-<suite id="s1" name="Api Test" source="C:\Users\me\Desktop\API-Testing\api_test.robot">
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-03-19T16:07:51.904626" rpa="false" schemaversion="5">
+<suite id="s1" name="Api Test" source="C:\Users\me\Desktop\API-Testing-Project\api_test.robot">
 <test id="s1-t1" name="TC01 - Get Users" line="8">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2025-03-19T13:50:08.125355" level="INFO">Creating Session using : alias=reqres, url=https://reqres.in/api, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2025-03-19T16:07:59.618493" level="INFO">Creating Session using : alias=reqres, url=https://reqres.in/api, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>reqres</arg>
 <arg>${BASE_URL}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2025-03-19T13:50:08.124707" elapsed="0.001204"/>
+<status status="PASS" start="2025-03-19T16:07:59.597575" elapsed="0.021872"/>
 </kw>
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2025-03-19T13:50:09.094161" level="INFO">GET Request : url=https://reqres.in/api/users?page=2 
+<msg time="2025-03-19T16:08:01.595689" level="INFO">GET Request : url=https://reqres.in/api/users?page=2 
  path_url=/api/users?page=2 
  headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2025-03-19T13:50:09.095210" level="INFO">GET Response : url=https://reqres.in/api/users?page=2 
+<msg time="2025-03-19T16:08:01.596053" level="INFO">GET Response : url=https://reqres.in/api/users?page=2 
  status=200, reason=OK 
- headers={'Date': 'Wed, 19 Mar 2025 06:50:10 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1741686063&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=SD0ffNwLsXvgQ9V%2BS2Yo115vPTyX%2FHit8P0zbNUFYtk%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1741686063&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=SD0ffNwLsXvgQ9V%2BS2Yo115vPTyX%2FHit8P0zbNUFYtk%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"440-ZjsmMKR8P3usr2uJZbOCGCxC3Uw"', 'Via': '1.1 vegur', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'HIT', 'Age': '3456', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '922b08b5987ef8fb-SIN', 'Content-Encoding': 'gzip', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=68032&amp;min_rtt=68032&amp;rtt_var=34016&amp;sent=6&amp;recv=7&amp;lost=0&amp;retrans=1&amp;sent_bytes=2868&amp;recv_bytes=775&amp;delivery_rate=20424&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=8d9b43ee9cd34982&amp;ts=232&amp;x=0"'} 
+ headers={'Date': 'Wed, 19 Mar 2025 09:08:04 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1741686063&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=SD0ffNwLsXvgQ9V%2BS2Yo115vPTyX%2FHit8P0zbNUFYtk%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1741686063&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=SD0ffNwLsXvgQ9V%2BS2Yo115vPTyX%2FHit8P0zbNUFYtk%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"440-ZjsmMKR8P3usr2uJZbOCGCxC3Uw"', 'Via': '1.1 vegur', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'HIT', 'Age': '4516', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '922bd2b5eea51658-SIN', 'Content-Encoding': 'gzip', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=69036&amp;min_rtt=59677&amp;rtt_var=34362&amp;sent=5&amp;recv=6&amp;lost=0&amp;retrans=0&amp;sent_bytes=2834&amp;recv_bytes=775&amp;delivery_rate=35932&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=d57e9f8fc7ac6a5d&amp;ts=145&amp;x=0"'} 
  body={"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://reqres.in/img/faces/7-image.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://reqres.in/img/faces/8-image.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://reqres.in/img/faces/9-image.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://reqres.in/img/faces/10-image.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://reqres.in/img/faces/11-image.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://reqres.in/img/faces/12-image.jpg"}],"support":{"url":"https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral","text":"Tired of writing endless social media content? Let Content Caddy generate it for you."}} 
  </msg>
-<msg time="2025-03-19T13:50:09.096002" level="INFO">C:\Users\me\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2025-03-19T16:08:01.596237" level="INFO">C:\Users\me\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2025-03-19T13:50:09.122781" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2025-03-19T16:08:01.598247" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>reqres</arg>
 <arg>url=/users?page=2</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2025-03-19T13:50:08.288508" elapsed="0.834392"/>
+<status status="PASS" start="2025-03-19T16:07:59.620497" elapsed="1.977888"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-03-19T13:50:09.132829" level="INFO">{'page': 2, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 7, 'email': 'michael.lawson@reqres.in', 'first_name': 'Michael', 'last_name': 'Lawson', 'avatar': 'https://reqres.in/img/faces/7-image.jpg'}, {'id': 8, 'email': 'lindsay.ferguson@reqres.in', 'first_name': 'Lindsay', 'last_name': 'Ferguson', 'avatar': 'https://reqres.in/img/faces/8-image.jpg'}, {'id': 9, 'email': 'tobias.funke@reqres.in', 'first_name': 'Tobias', 'last_name': 'Funke', 'avatar': 'https://reqres.in/img/faces/9-image.jpg'}, {'id': 10, 'email': 'byron.fields@reqres.in', 'first_name': 'Byron', 'last_name': 'Fields', 'avatar': 'https://reqres.in/img/faces/10-image.jpg'}, {'id': 11, 'email': 'george.edwards@reqres.in', 'first_name': 'George', 'last_name': 'Edwards', 'avatar': 'https://reqres.in/img/faces/11-image.jpg'}, {'id': 12, 'email': 'rachel.howell@reqres.in', 'first_name': 'Rachel', 'last_name': 'Howell', 'avatar': 'https://reqres.in/img/faces/12-image.jpg'}], 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}</msg>
+<msg time="2025-03-19T16:08:01.603257" level="INFO">{'page': 2, 'per_page': 6, 'total': 12, 'total_pages': 2, 'data': [{'id': 7, 'email': 'michael.lawson@reqres.in', 'first_name': 'Michael', 'last_name': 'Lawson', 'avatar': 'https://reqres.in/img/faces/7-image.jpg'}, {'id': 8, 'email': 'lindsay.ferguson@reqres.in', 'first_name': 'Lindsay', 'last_name': 'Ferguson', 'avatar': 'https://reqres.in/img/faces/8-image.jpg'}, {'id': 9, 'email': 'tobias.funke@reqres.in', 'first_name': 'Tobias', 'last_name': 'Funke', 'avatar': 'https://reqres.in/img/faces/9-image.jpg'}, {'id': 10, 'email': 'byron.fields@reqres.in', 'first_name': 'Byron', 'last_name': 'Fields', 'avatar': 'https://reqres.in/img/faces/10-image.jpg'}, {'id': 11, 'email': 'george.edwards@reqres.in', 'first_name': 'George', 'last_name': 'Edwards', 'avatar': 'https://reqres.in/img/faces/11-image.jpg'}, {'id': 12, 'email': 'rachel.howell@reqres.in', 'first_name': 'Rachel', 'last_name': 'Howell', 'avatar': 'https://reqres.in/img/faces/12-image.jpg'}], 'support': {'url': 'https://contentcaddy.io?utm_source=reqres&amp;utm_medium=json&amp;utm_campaign=referral', 'text': 'Tired of writing endless social media content? Let Content Caddy generate it for you.'}}</msg>
 <arg>${response.json()}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-03-19T13:50:09.131270" elapsed="0.005157"/>
+<status status="PASS" start="2025-03-19T16:08:01.599190" elapsed="0.004689"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
-<msg time="2025-03-19T13:50:09.328918" level="INFO">Argument types are:
+<msg time="2025-03-19T16:08:01.609831" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2025-03-19T13:50:09.320725" elapsed="0.008431"/>
+<status status="PASS" start="2025-03-19T16:08:01.604961" elapsed="0.007442"/>
 </kw>
-<status status="PASS" start="2025-03-19T13:50:08.004676" elapsed="1.376106"/>
+<status status="PASS" start="2025-03-19T16:07:59.595104" elapsed="2.018386"/>
 </test>
 <test id="s1-t2" name="TC02 - Create User" line="14">
 <kw name="Create Session" owner="RequestsLibrary">
-<msg time="2025-03-19T13:50:09.916037" level="INFO">Creating Session using : alias=reqres, url=https://reqres.in/api, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2025-03-19T16:08:01.630108" level="INFO">Creating Session using : alias=reqres, url=https://reqres.in/api, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
 <arg>reqres</arg>
 <arg>${BASE_URL}</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2025-03-19T13:50:09.915191" elapsed="0.001844"/>
+<status status="PASS" start="2025-03-19T16:08:01.629597" elapsed="0.028119"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2025-03-19T13:50:10.023839" level="INFO">${body} = {'name': 'John', 'job': 'QA Engineer'}</msg>
+<msg time="2025-03-19T16:08:01.660210" level="INFO">${body} = {'name': 'John', 'job': 'QA Engineer'}</msg>
 <var>${body}</var>
 <arg>name=John</arg>
 <arg>job=QA Engineer</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2025-03-19T13:50:10.021312" elapsed="0.002660"/>
+<status status="PASS" start="2025-03-19T16:08:01.659268" elapsed="0.001061"/>
 </kw>
 <kw name="POST On Session" owner="RequestsLibrary">
-<msg time="2025-03-19T13:50:11.572584" level="INFO">POST Request : url=https://reqres.in/api/users 
+<msg time="2025-03-19T16:08:02.587057" level="INFO">POST Request : url=https://reqres.in/api/users 
  path_url=/api/users 
  headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '38', 'Content-Type': 'application/json'} 
  body=b'{"name": "John", "job": "QA Engineer"}' 
  </msg>
-<msg time="2025-03-19T13:50:11.572809" level="INFO">POST Response : url=https://reqres.in/api/users 
+<msg time="2025-03-19T16:08:02.587560" level="INFO">POST Response : url=https://reqres.in/api/users 
  status=201, reason=Created 
- headers={'Date': 'Wed, 19 Mar 2025 06:50:12 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '85', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1742367012&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=WnwbR1068TuJB3uknV3x9g2cV7rKdSSCHQrdqlS0IDA%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1742367012&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=WnwbR1068TuJB3uknV3x9g2cV7rKdSSCHQrdqlS0IDA%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"55-HMii3NmtMMLOUZac0gkfaamS6gU"', 'Via': '1.1 vegur', 'cf-cache-status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '922b08c2fcd2fcee-SIN', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=57233&amp;min_rtt=55582&amp;rtt_var=24146&amp;sent=5&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2834&amp;recv_bytes=881&amp;delivery_rate=61050&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=cfb17bbaab45fb1a&amp;ts=651&amp;x=0"'} 
- body={"name":"John","job":"QA Engineer","id":"102","createdAt":"2025-03-19T06:50:12.599Z"} 
+ headers={'Date': 'Wed, 19 Mar 2025 09:08:05 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '85', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1742375285&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=6VCXTLDIT14%2B08noVIInPLcch0kj3QJ%2FkocHJGSn9xk%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1742375285&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=6VCXTLDIT14%2B08noVIInPLcch0kj3QJ%2FkocHJGSn9xk%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"55-2kAdXCQC3tTmCu2yjGggYyFmiPY"', 'Via': '1.1 vegur', 'cf-cache-status': 'DYNAMIC', 'Server': 'cloudflare', 'CF-RAY': '922bd2ba0bfaf44c-SIN', 'server-timing': 'cfL4;desc="?proto=TCP&amp;rtt=52737&amp;min_rtt=51345&amp;rtt_var=22039&amp;sent=6&amp;recv=7&amp;lost=0&amp;retrans=0&amp;sent_bytes=2834&amp;recv_bytes=881&amp;delivery_rate=67215&amp;cwnd=252&amp;unsent_bytes=0&amp;cid=06e12e9b09b14408&amp;ts=519&amp;x=0"'} 
+ body={"name":"John","job":"QA Engineer","id":"493","createdAt":"2025-03-19T09:08:05.130Z"} 
  </msg>
-<msg time="2025-03-19T13:50:11.575543" level="INFO">C:\Users\me\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+<msg time="2025-03-19T16:08:02.588971" level="INFO">C:\Users\me\AppData\Local\Programs\Python\Python313\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'reqres.in'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
   warnings.warn(</msg>
-<msg time="2025-03-19T13:50:11.595748" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<msg time="2025-03-19T16:08:02.726526" level="INFO">${response} = &lt;Response [201]&gt;</msg>
 <var>${response}</var>
 <arg>reqres</arg>
 <arg>/users</arg>
 <arg>json=${body}</arg>
 <doc>Sends a POST request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2025-03-19T13:50:10.118678" elapsed="1.477177"/>
+<status status="PASS" start="2025-03-19T16:08:01.661189" elapsed="1.065451"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-03-19T13:50:11.598928" level="INFO">{'name': 'John', 'job': 'QA Engineer', 'id': '102', 'createdAt': '2025-03-19T06:50:12.599Z'}</msg>
+<msg time="2025-03-19T16:08:03.005913" level="INFO">{'name': 'John', 'job': 'QA Engineer', 'id': '493', 'createdAt': '2025-03-19T09:08:05.130Z'}</msg>
 <arg>${response.json()}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-03-19T13:50:11.597375" elapsed="0.001956"/>
+<status status="PASS" start="2025-03-19T16:08:03.004749" elapsed="0.001296"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
-<msg time="2025-03-19T13:50:11.601041" level="INFO">Argument types are:
+<msg time="2025-03-19T16:08:03.007699" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${response.status_code}</arg>
 <arg>201</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2025-03-19T13:50:11.599914" elapsed="0.001343"/>
+<status status="PASS" start="2025-03-19T16:08:03.006700" elapsed="0.001140"/>
 </kw>
-<status status="PASS" start="2025-03-19T13:50:09.771546" elapsed="1.830794"/>
+<status status="PASS" start="2025-03-19T16:08:01.628305" elapsed="1.380140"/>
 </test>
-<status status="PASS" start="2025-03-19T13:49:58.535090" elapsed="13.161131"/>
+<status status="PASS" start="2025-03-19T16:07:51.932376" elapsed="11.147274"/>
 </suite>
 <statistics>
 <total>
